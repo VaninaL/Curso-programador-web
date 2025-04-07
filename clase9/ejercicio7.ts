@@ -10,7 +10,7 @@ let i:number = 0;
 let verificador:string = "El nombre no se encuentra en el arreglo "
 
 for (i; i<5;i++){
-    if (listaDeLetras[i] === nombreBuscado ){
+    if (listaDeLetras[i].toLowerCase() === nombreBuscado.toLowerCase() ){
         verificador = `El nombre coincide con la posicion ${i} del arreglo `;
     }
 }
