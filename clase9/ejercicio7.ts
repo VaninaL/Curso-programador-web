@@ -13,9 +13,8 @@ for (i; i<5; i++){
     if(nombreBuscado == listaDeLetras[i]){
         console.log("El nombre ingresado se encuentra en el arreglo");        
     }else {
-        console.log("El nombre ingresado no se encuentra en el arreglo") // te falto el fucking ";" 
+        console.log("El nombre ingresado no se encuentra en el arreglo"); 
     }
 
 }
-
-//no anda ni pa atras "muejajajajajajaaja"
+let vanina:string;
