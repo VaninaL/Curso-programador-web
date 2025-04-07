@@ -9,7 +9,7 @@ let nombreBuscado:string = rls.question ("Ingrese el nombre que desea buscar en 
 let i:number = 0;
 
 for (i; i<5; i++){
-    console.log(listaDeLetras);
+    
     if(nombreBuscado == listaDeLetras[i]){
         console.log("El nombre ingresado se encuentra en el arreglo");        
     }else {
