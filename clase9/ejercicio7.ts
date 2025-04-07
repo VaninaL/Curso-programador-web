@@ -13,7 +13,9 @@ for (i; i<5; i++){
     if(nombreBuscado == listaDeLetras[i]){
         console.log("El nombre ingresado se encuentra en el arreglo");        
     }else {
-        console.log("El nombre ingresado no se encuentra en el arreglo"); 
+        console.log("El nombre ingresado no se encuentra en el arreglo") // te falto el fucking ";" 
     }
 
 }
+
+//no anda ni pa atras "muejajajajajajaaja"
