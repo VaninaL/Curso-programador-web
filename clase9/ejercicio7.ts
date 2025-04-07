@@ -17,4 +17,4 @@ for (i; i<5; i++){
     }
 
 }
-let vanina:string;
+
