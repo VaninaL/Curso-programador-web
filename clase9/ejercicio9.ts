@@ -24,7 +24,7 @@ let indiceSuma:number = 0;
 
 function sumarIndice (n1:number,n2:number):(number){
     let resultado:number = n1 + n2  
-    indiceSuma = resultado
+    indiceSuma = resultado                      ///llevara ; despuesw de estas expresiones?
     return resultado
 }
 
@@ -46,7 +46,7 @@ for (let i:number = 0 ; i< dimension;i++){
     console.log (`El arreglo vector2 quedo conformado de la siguiente manera: ${vector2} `);
 
 for (let i:number = 0 ; i< dimension;i++){ 
-    sumarIndice (vector1[i],vector2[i]) 
+    sumarIndice (vector1[i],vector2[i]);
     vectorSuma[i]=indiceSuma
 }  
 console.log("");
