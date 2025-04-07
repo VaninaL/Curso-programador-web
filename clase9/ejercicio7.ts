@@ -19,4 +19,3 @@ for (i; i<5; i++){
 }
 
 //no anda ni pa atras "muejajajajajajaaja"
-// si esta mal
