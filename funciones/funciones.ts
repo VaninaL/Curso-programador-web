@@ -4,14 +4,13 @@ export let calcularAreaTriangulo =(base:number,altura:number) : number => {
 } 
 
 export  let cantidadDeDivisores = (divisor:number):number=> {
+    let contador:number=0
     for (let i:number = 1; i<= divisor; i ++){ 
     esMultiplof (divisor,i)
         if (esMultiplof (divisor,i) == true){                
-            let contador:number;
-            contador=contador+1
+        contador++
         }        
-    }
-    return contador
+    }  return contador  
 }
 
 export let esMultiplof = (num1:number,num2:number):boolean =>{
@@ -83,9 +82,54 @@ export function parImpar (n:number):string {
     console.log(respuesta);    
     return respuesta;
 }
-export 
-function sumarIndice (n1:number,n2:number):(number){
+ 
+export function sumarIndice (n1:number,n2:number):(number){
     let resultado:number = n1 + n2  
     let indiceSuma = resultado                      ///llevara ; despuesw de estas expresiones?
     return resultado
+}
+export function cargarArreglo (nombreArreglo:number[],longitud:number):void {
+    for (let i:number = 0; i < longitud;i++){
+        nombreArreglo[i] = rls.questionInt(`Ingrese el numero ${i+1} de ${longitud} para la posicion ${i} del arreglo: `);
+    }
+}
+import* as rls from "readline-sync";
+
+export function evaluarNumero (arreglo:number[]):void{
+    let positivos:number=0;
+    let negativos:number=0;
+    let ceros:number=0;
+    for(let i:number = 0; i < arreglo.length ; i++){
+        if (arreglo[i] > 0){
+            positivos++
+        }else if (arreglo[i] < 0){
+            negativos++
+        }else {
+            ceros++
+        }
+    }
+}
+export function cambiarVocales(letraV:string):string {
+    let cambio:string = "";
+    if(letraV.toLowerCase() === "a"){
+        cambio = "!";
+    }else if (letraV.toLowerCase()  === "e") {
+        cambio = ";";
+    }else if(letraV.toLowerCase()  === "i"){
+        cambio = ":";
+    }else if (letraV.toLowerCase()  === "o"){
+        cambio = "*";        
+    }else if (letraV.toLowerCase()  === "u"){
+        cambio = "/";
+    }
+    return cambio;
+}   
+export function cambiarConsonantes(letraC:string) : string {
+    let letraNormalizada:string = letraC.toLowerCase()
+    if(letraC == letraNormalizada){
+        letraC = letraC.toUpperCase();
+    }else {
+        letraC = letraC.toLowerCase();
+    }
+    return letraC
 }
