@@ -21,13 +21,7 @@ let dimension:number = vectorSuma.length;
 let indice1:number;
 let indice2:number;
 let indiceSuma:number = 0;
-
-function sumarIndice (n1:number,n2:number):(number){
-    let resultado:number = n1 + n2  
-    indiceSuma = resultado                      ///llevara ; despuesw de estas expresiones?
-    return resultado
-}
-
+import { sumarIndice } from "../funciones/funciones";
 
 console.log(`Ingresemos los numeros para el vector1`);
 

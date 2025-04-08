@@ -23,16 +23,8 @@ let numMasGrande:number = 1;
 let dimension:number = numeros.length;
 let contador:number = 0;
 
-function parImpar (n:number):string {
-    let respuesta:string;
-    if (n % 2 === 0){
-        respuesta = " El numero ingresado es par "
-    } else {
-        respuesta = " El numero ingresado es impar "
-    }
-    console.log(respuesta);    
-    return respuesta;
-}
+import { parImpar } from "../funciones/funciones";
+
 for(let i:number=0; i< dimension; i++){    
     if (numeros[i]> contador){
         contador = numeros [i]       

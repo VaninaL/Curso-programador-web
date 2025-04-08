@@ -6,10 +6,7 @@ paquete Math:-Math.random() devuelve un nro al azar entre 0 y 1*/
 
 let numerosAleatorios:number[] = new Array (10);
 
-function azar():number {
-    let numero = Math.round(Math.random() * 100);
-    return numero
-}
+import { azar } from "../funciones/funciones";
 
 for (let i:number = 0; i<10; i++){
     numerosAleatorios[i] = azar();    

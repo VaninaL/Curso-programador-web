@@ -7,20 +7,11 @@
 
   
 
-import {esMultiplof} from "./esMultiploFunc";
+import { esMultiplo } from "../funciones/funciones";
 
 let contador:number=0;
 let divisor:number;
 
- let cantidadDeDivisores = (divisor:number):number=> {
-  
- for (let i:number =1; i<= divisor; i ++){ 
-    esMultiplof (divisor,i)
-      if (esMultiplof (divisor,i) == true){                
-         contador=contador+1
-      }        
-   }
-   return contador
- };
+import { cantidadDeDivisores } from "../funciones/funciones";
 
 console.log(cantidadDeDivisores (20));

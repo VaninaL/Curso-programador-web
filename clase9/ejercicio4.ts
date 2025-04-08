@@ -9,11 +9,7 @@ import* as rls from "readline-sync";
 let nombres:string[] = new Array (2);
 let numeros:number[] = new Array (3);
 
-function recorrerArreglos (lista:string[]|number[]):void {
-    for (let i:number =0;i < lista.length ;i++){
-        console.log(lista[i]); 
-    }
-}
+import { recorrerArreglos } from "../funciones/funciones";
 
 for (let i:number = 0; i< nombres.length; i++){
     nombres[i]= rls.question (`Ingrese el nombre que desee para la posicion ${i}: `);

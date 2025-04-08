@@ -7,22 +7,15 @@ const operacion: number =rls.questionInt ("Ingerse 1 para sumar, 2 para restar, 
 
 
 
-function dibujarGuiones (cantidad:number) :void {
-    let i : number;
-    let linea : string=""
-    for (i=0; i<cantidad;i++){
-    linea = linea + "-"
-    };
-     console.log( linea);
-     
+import { dibujarGuiones } from "../funciones/funciones";
+
+
+if (operacion == 1){
+   dibujarGuiones (20);
+   console.log(`El resultado de la suma es ${num1 + num2}`);
+   dibujarGuiones(30);
+} else if (operacion == 2){
+   dibujarGuiones(40);
+   console.log(`El reusltado de la resta es ${num1 - num2}`);
+   dibujarGuiones(50);
 }
- if (operacion == 1){
-    dibujarGuiones (20);
-    console.log(`El resultado de la suma es ${num1 + num2}`);
-    dibujarGuiones(30);
- } else if (operacion == 2){
-    dibujarGuiones(40);
-    console.log(`El reusltado de la resta es ${num1 - num2}`);
-    dibujarGuiones(50);
- }
-    

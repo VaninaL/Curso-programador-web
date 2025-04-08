@@ -5,10 +5,7 @@ triángulo usando los siguientes pares de base-altura:
 que reciba dos números por parámetro (uno llamado 
 base y otro altura)*/
 
-let calcularAreaTriangulo =(base:number,altura:number) : number => {
-    resultado = (base * altura)
-    return (resultado)
-} 
+import { calcularAreaTriangulo } from "../funciones/funciones";
  let resultado : number;
 
  resultado = calcularAreaTriangulo (1,2);
