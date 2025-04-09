@@ -82,10 +82,10 @@ export function parImpar (n:number):string {
     console.log(respuesta);    
     return respuesta;
 }
- 
-export function sumarIndice (n1:number,n2:number):(number){
-    let resultado:number = n1 + n2  
-    let indiceSuma = resultado                      ///llevara ; despuesw de estas expresiones?
+
+export function sumarIndice (n1:number,n2:number,n3:number):(number){
+    let resultado:number = n1 + n2 + n3  
+    let indiceSuma = resultado                  
     return resultado
 }
 export function cargarArreglo (nombreArreglo:number[],longitud:number):void {
