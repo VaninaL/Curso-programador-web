@@ -7,11 +7,9 @@
 let texto = "hola mundo esto es una prueba";
 // Debería convertirse en "Hola Mundo Esto Es Una Prueba"
 
-let arregloTexto:string[] = texto.split(" ");
-
-let primeraLetra:string[] = arregloTexto.map((letra) => letra.charAt(0).toUpperCase() + letra.slice(1));
-
-let textoFinal:string = primeraLetra.join(" ");
+let textoFinal = texto.split(" ")
+                .map((letra) => letra.charAt(0).toUpperCase() + letra.slice(1))
+                .join(" ");
 
 console.log(textoFinal);
 
