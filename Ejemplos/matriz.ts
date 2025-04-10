@@ -1,25 +1,13 @@
 
-let marta:string[][] = [];
-marta[0]=[];
-marta[1]=[];
+let palabra:string = "zanAhoriA";
+let condicion1:RegExp;
 
-marta[0][0] = "santiago";
+condicion1 = /a/gi;
+//funcion depende lo que yo reciba devuelvo lo mismo pero en mayusculas
+//              buscar             reemplaza "toma te doy una a"
+//.replace (   condicion1   ,        funcion   ==>  A   )
+//
+let palabraModificada:string = palabra.replace(   condicion1    ,   "1"       );
 
-marta[0][1] = "federico";
-
-marta[0][2] = "casal";
-
-marta[1][0] = "vanina";
-
-marta[1][1] = "lucrecia";
-
-marta[1][2] = "labrunee";
-
-
-
-console.log(marta[1]);
-
-
-
-
+console.log(palabraModificada);
 
