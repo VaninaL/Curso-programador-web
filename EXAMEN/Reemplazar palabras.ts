@@ -12,4 +12,5 @@ let frase1 = "El gato es mi mascota favorita";
 
 /*
 Pista: Pista: Usa replace para cambiar la palabra.*/
-
+let frase2:string =frase1.replace("gato","perro");
+console.log(frase2);

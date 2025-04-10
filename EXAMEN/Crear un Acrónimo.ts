@@ -8,5 +8,11 @@ Usa split, map, y join.
 Ejemplo: */
 
 let frase = "Asociación de Padres de Familia";
-// Debería convertirse en "APDF"
+// Debería convertirse en "ADPDF"
+
+let arreglo:string = frase.split(" ").map((letra) => letra.charAt(0)).join("");
+console.log(arreglo);
+
+
+
 

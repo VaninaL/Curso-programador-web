@@ -36,4 +36,18 @@ let text = "este es un informe importante fin este mensaje es urgente y requiere
         Paso 3: Une las oraciones de nuevo con un punto y un espacio (". ").
 */
 
-                    
+    let arregloTexto:string[] = text.split(" fin ");
+
+    let mayuscula:string[] = arregloTexto.map((oracion) => oracion.charAt(0).toUpperCase() + oracion.slice(1)
+                            .replace("leerlo","LEERLO").replace("importante","IMPORTANTE").replace("urgente","URGENTE")
+                            .split(" ").filter((pCorta) => pCorta.length > 2 || pCorta === "es").join(" ")
+                            );
+    let textoFinalisimo:string = mayuscula.join(". ");                       
+console.log(textoFinalisimo);
+
+
+    
+
+
+
+    
