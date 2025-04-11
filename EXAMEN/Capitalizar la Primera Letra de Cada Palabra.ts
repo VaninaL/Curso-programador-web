@@ -4,7 +4,7 @@
 
 // Ejemplo: 
 
-let texto = "hola mundo esto es una prueba";
+let texto: string = "hola mundo esto es una prueba";
 // Debería convertirse en "Hola Mundo Esto Es Una Prueba"
 
 let textoFinal = texto.split(" ")

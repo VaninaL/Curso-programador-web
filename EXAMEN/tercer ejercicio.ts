@@ -11,12 +11,15 @@ let impar:number = 0;
 function arraynum (numero:number[]){
     for(let i:number = 0;i < numeros.length;i++){
         if(numero[i] % 2 == 0){
-        par++ 
+            par++ ;
         }else{
-            impar++
-        }
-    }
-}
-arraynum(numeros)
+            impar++;
+        };
+    };
+};
+
+arraynum(numeros);
+
 console.log(`la cantidad de numeros pares en el arreglo es de: ${par}`);
 console.log(`la cantidad de numeros impares en el arreglo es de: ${impar}`);
+

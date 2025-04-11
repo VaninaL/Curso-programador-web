@@ -7,13 +7,13 @@ Utiliza split, reverse, y join para invertir el orden de las palabras.
 
 Ejemplo: */
 
-let texto1 = "hola cómo estás";
+let texto1:string = "hola cómo estás";
 // Debería convertirse en "estás cómo hola"
 
 /*
 Pista: Divide el texto en palabras, invierte el arreglo y luego vuelve a unirlo.*/
 
-let textoArray:string[] = texto1.split(" ")
+let textoArray:string[] = texto1.split(" ");
 textoArray.reverse();
 let finalText:string = textoArray.join(" ");
 console.log(finalText);
