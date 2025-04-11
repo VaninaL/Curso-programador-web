@@ -11,7 +11,7 @@ El gerente necesita saber:
     * El promedio de edad de las personas que ingresaron al local.
 
 Para la simulación de las edades de los asistentes, puedes utilizar la siguiente función que genera un número aleatorio
- entre un valor mínimo y máximo:
+entre un valor mínimo y máximo:
 
 function aleatorio(min, max) { 
     return Math.floor(Math.random() * (max - min + 1)) + min; 
@@ -27,21 +27,21 @@ let mayores:number =0;
 let promedio:number = 0;
 let edades:number = 0;
 
-function aleatorio(min:number, max:number) :number { 
+function aleatorio(min:number, max:number):number { 
     return Math.floor(Math.random() * (max - min + 1)) + min;      
 }
 
 for (let i:number = 0;i < totalPersonas;i++){
-    res = aleatorio(edadMax,edadMin)    
+    res = aleatorio(edadMax,edadMin);    
     if (res < 21){
-    menores++    
+        menores++;   
     }else{
-        mayores++
-    } 
-    edades = res + edades
-    promedio = edades / totalPersonas
-}
+        mayores++;
+    };
+    edades = res + edades;    
+};
 
+promedio = edades / totalPersonas;
 
 console.log(`la cantidad de menores de 21 años en el local es de: ${menores}`);
 console.log(`la cantidad de mayores de 21 años en el local es de: ${mayores}`);
